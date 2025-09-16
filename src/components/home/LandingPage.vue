@@ -3,6 +3,7 @@ import Navbar from './navbar/Navbar.vue'
 import Hero from './hero/Hero.vue'
 import CourseCategories from './course/CourseCategories.vue'
 import Testimonials from './testimonials/Testimonials.vue'
+import WhySiksaOnline from './about/WhySiksaOnline.vue'
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import Testimonials from './testimonials/Testimonials.vue'
     <Navbar />
     <Hero />
     <CourseCategories />
+    <WhySiksaOnline/>
     <Testimonials />
     <FinalCTA /> 
   </div>
