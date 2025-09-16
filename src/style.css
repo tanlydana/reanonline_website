@@ -24,17 +24,29 @@ body {
     @apply mx-auto px-4 sm:px-6 lg:px-8;
   }
   .btn-primary {
-  @apply text-white py-3 px-6 rounded-full transition border-none;
+  @apply text-white text-sm py-3 px-6 rounded-full transition border-none;
   background-color: var(--color-primary);
   font-family: "Kantumruy Pro", sans-serif;
 }
 
 .btn-secondary {
-  @apply text-white py-3 px-6 rounded-full transition border-none;
+  @apply text-white text-sm py-3 px-6 rounded-full transition border-none;
   background-color: var(--color-secondary);
   font-family: "Kantumruy Pro", sans-serif;
 }
 .font-kantumruy {
   font-family: "Kantumruy Pro", sans-serif;
+}
+.badge{
+  @apply inline-flex items-center px-4 py-2 bg-[#BB2233]/60 text-white text-sm font-medium rounded-full;
+}
+.header-text{
+  @apply text-4xl md:text-5xl font-bold; 
+}
+.sub-text{
+  @apply max-w-2xl text-lg text-shadow-white leading-relaxed;
+}
+.card{
+  @apply rounded-xl shadow-sm  transition-all duration-300 hover:-translate-y-1 p-8 border border-amber-50;  
 }
 
