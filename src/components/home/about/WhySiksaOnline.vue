@@ -4,7 +4,7 @@ import { ChevronRightIcon } from '@heroicons/vue/16/solid';
 </script>
 
 <template>
-    <section class="bg-white py-16 my-12">
+    <section class="bg-white mt-20">
         <div class="container flex flex-col items-center justify-center text-center">
             <h2 class="header-text text-[#0A0F24] mb-4">Benefits of Online Education</h2>
             <p class="sub-text">
@@ -29,7 +29,7 @@ import { ChevronRightIcon } from '@heroicons/vue/16/solid';
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-20 my-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center my-20">
                 <!-- Image -->
                 <div class="flex justify-center">
                     <img src="../../../assets/tutorial.png" alt="Tutorial"
