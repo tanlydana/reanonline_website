@@ -4,6 +4,7 @@ import Hero from './hero/Hero.vue'
 import CourseCategories from './course/CourseCategories.vue'
 import Testimonials from './testimonials/Testimonials.vue'
 import WhySiksaOnline from './about/WhySiksaOnline.vue'
+import OurService from './service/OurService.vue'
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import WhySiksaOnline from './about/WhySiksaOnline.vue'
     <Hero />
     <CourseCategories />
     <WhySiksaOnline/>
+    <OurService/>
     <Testimonials />
     <FinalCTA /> 
   </div>
