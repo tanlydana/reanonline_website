@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import logo from '@/assets/logo.png'
-import { ArrowLongRightIcon } from '@heroicons/vue/16/solid';
+import { ChevronRightIcon } from '@heroicons/vue/16/solid';
 const navigationItems = [
   { name: "ទំព័រដើម", href: "/" },
   { name: "សេវាកម្ម", href: "/services" },
@@ -35,7 +35,7 @@ const navigationItems = [
         </div>
 
         <div class="flex justify-end">
-        <button class="btn-primary flex items-center gap-2"><ArrowLongRightIcon class="w-5 h-5" />ចុះឈ្មោះឥឡូវ</button>
+        <button class="btn-primary flex items-center gap-2"><ChevronRightIcon class="w-5 h-5" />ចុះឈ្មោះឥឡូវ</button>
       </div>
         </nav>
     </header>

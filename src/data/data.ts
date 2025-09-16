@@ -1,5 +1,13 @@
 // data.ts
-import { CalculatorIcon, BookOpenIcon } from '@heroicons/vue/24/solid';
+import {
+  CalculatorIcon,
+  BookOpenIcon,
+  UserGroupIcon,
+  ClockIcon,
+  CurrencyDollarIcon,
+  VideoCameraIcon,
+} from "@heroicons/vue/24/solid";
+import type { Component } from "vue";
 // ---------------------------
 // Interfaces
 // ---------------------------
@@ -10,15 +18,16 @@ export interface Subject {
 }
 
 export interface Category {
-  icon: any;      // Vue component
-  title: string;  // e.g., "ថ្នាក់វិទ្យាសាស្រ្ត"
+  icon: Component; // Vue component
+  title: string; // e.g., "ថ្នាក់វិទ្យាសាស្រ្ត"
   subjects: Subject[];
 }
 
 export interface WhyChooseCard {
-  icon: string; // component name or path
+  icon: Component;
   title: string;
   description: string;
+  bgColor: string;
 }
 
 export interface Course {
@@ -67,10 +76,22 @@ export const categories: Category[] = [
     subjects: [
       { name: "គណិតវិទ្យា", topics: ["លីមីត", "អាំងតេក្រា", "ប្រូបាប"] },
       { name: "រូបវិទ្យា", topics: ["ចលនា", "ថាមពល", "ចរន្តអគ្គិសនី"] },
-      { name: "គីមីវិទ្យា", topics: ["ធាតុ និងសមាសធាតុ", "ប្រតិកម្មគីមី", "អាស៊ីត-មូលដ្ឋាន"] },
-      { name: "ជីវវិទ្យា", topics: ["កោសិកា", "ជីវវិទ្យាសរីរាង្គ", "បំពង់រំញោច"] },
-      { name: "អក្សរសាស្រ្តខ្មែរ", topics: ["វចនានុក្រម", "វចនានុក្រមសិក្សា", "អត្ថបទ"] },
-      { name: "ប្រវត្តិវិទ្យា", topics: ["ប្រវត្តិជាតិ", "ប្រវត្តិអន្តរជាតិ", "សង្គ្រាម"] },
+      {
+        name: "គីមីវិទ្យា",
+        topics: ["ធាតុ និងសមាសធាតុ", "ប្រតិកម្មគីមី", "អាស៊ីត-មូលដ្ឋាន"],
+      },
+      {
+        name: "ជីវវិទ្យា",
+        topics: ["កោសិកា", "ជីវវិទ្យាសរីរាង្គ", "បំពង់រំញោច"],
+      },
+      {
+        name: "អក្សរសាស្រ្តខ្មែរ",
+        topics: ["វចនានុក្រម", "វចនានុក្រមសិក្សា", "អត្ថបទ"],
+      },
+      {
+        name: "ប្រវត្តិវិទ្យា",
+        topics: ["ប្រវត្តិជាតិ", "ប្រវត្តិអន្តរជាតិ", "សង្គ្រាម"],
+      },
       { name: "អង់គ្លេស", topics: ["Grammar", "Vocabulary", "Reading"] },
     ],
   },
@@ -78,33 +99,51 @@ export const categories: Category[] = [
     icon: BookOpenIcon,
     title: "ថ្នាក់វិទ្យាសាស្រ្តសង្គម",
     subjects: [
-      { name: "អក្សរសាស្រ្តខ្មែរ", topics: ["វចនានុក្រម", "អត្ថបទ", "ប្រវត្តិអក្សរសាស្រ្ត"] },
+      {
+        name: "អក្សរសាស្រ្តខ្មែរ",
+        topics: ["វចនានុក្រម", "អត្ថបទ", "ប្រវត្តិអក្សរសាស្រ្ត"],
+      },
       { name: "ភូមិវិទ្យា", topics: ["បរិយាកាស", "ដែនដី", "ភូមិសាស្រ្ត"] },
-      { name: "ផែនដីនិងបរិស្ថានវិទ្យា", topics: ["បរិស្ថាន", "ធនធាន", "ប្រព័ន្ធអេកូស៊ីស្ទឹម"] },
+      {
+        name: "ផែនដីនិងបរិស្ថានវិទ្យា",
+        topics: ["បរិស្ថាន", "ធនធាន", "ប្រព័ន្ធអេកូស៊ីស្ទឹម"],
+      },
       { name: "សីលធម៌ពលរដ្ឋ", topics: ["ច្បាប់", "សីលធម៌", "សិទ្ធិមនុស្ស"] },
       { name: "គណិតវិទ្យា", topics: ["លីមីត", "អាំងតេក្រា", "ប្រូបាប"] },
-      { name: "ប្រវត្តិវិទ្យា", topics: ["ប្រវត្តិជាតិ", "ប្រវត្តិអន្តរជាតិ", "សង្គ្រាម"] },
+      {
+        name: "ប្រវត្តិវិទ្យា",
+        topics: ["ប្រវត្តិជាតិ", "ប្រវត្តិអន្តរជាតិ", "សង្គ្រាម"],
+      },
       { name: "អង់គ្លេស", topics: ["Grammar", "Vocabulary", "Reading"] },
     ],
   },
 ];
 
-
 export const whyChooseUs: WhyChooseCard[] = [
   {
-    icon: "IconName1",
-    title: "High Quality Content",
-    description: "Our courses are designed by experts to ensure top-notch learning.",
+    icon: UserGroupIcon,
+    title: "Expert Instructors",
+    description:
+      "Learn from experienced and passionate teachers who guide you step by step.",
+    bgColor: "bg-red-800",
   },
   {
-    icon: "IconName2",
-    title: "Expert Teachers",
-    description: "Learn from the best teachers with years of experience.",
+    icon: ClockIcon,
+    title: "Flexible Learning",
+    description: "Study anytime, anywhere, and set your own learning pace.",
+    bgColor: "bg-amber-400",
   },
   {
-    icon: "IconName3",
-    title: "Flexible Schedule",
-    description: "Study anytime, anywhere, at your own pace.",
+    icon: CurrencyDollarIcon,
+    title: "Affordable Price",
+    description: "High-quality education at a price everyone can afford.",
+    bgColor: "bg-green-800",
+  },
+  {
+    icon: VideoCameraIcon,
+    title: "High-Quality Video",
+    description: "Engaging, clear, and easy-to-follow video courses.",
+    bgColor: "bg-violet-800",
   },
 ];
 
