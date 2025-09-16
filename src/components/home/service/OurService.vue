@@ -3,7 +3,6 @@ import { courses } from '../../../data/course';
 </script>
 
 <template>
-
     <div class="container flex flex-col items-center justify-center text-center mb-12">
       <!-- Title -->
       <h2 class="header-text text-[#0A0F24] mb-4">Our Popular Course</h2>
@@ -11,7 +10,7 @@ import { courses } from '../../../data/course';
     </div>
 
     <!-- Cards -->
-    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="container max-w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div
         v-for="course in courses"
         :key="course.name"
@@ -28,7 +27,7 @@ import { courses } from '../../../data/course';
         <div class="p-6 text-start">
           <h3 class="text-xl font-bold text-[#0A0F24] mb-2">{{ course.name }}</h3>
           <p class="text-gray-600 mb-4">Rate: {{ course.rate }} ⭐⭐⭐</p>
-          <button class="p-2 px-6 rounded-lg border border-gray-200 bg-gray-100 w-full">
+          <button class="p-2 px-6 rounded-lg border border-gray-200 bg-gray-100 hover:bg-gray-200 w-full">
             Enroll
           </button>
         </div>
@@ -38,5 +37,4 @@ import { courses } from '../../../data/course';
     <div class="flex justify-center items-center mt-10">
       <button class="btn-secondary">មើលបន្ថែម</button>
     </div>
-
 </template>
