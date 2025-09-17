@@ -5,6 +5,7 @@ import CourseCategories from './course/CourseCategories.vue'
 import Testimonials from './testimonials/Testimonials.vue'
 import WhySiksaOnline from './about/WhySiksaOnline.vue'
 import OurService from './service/OurService.vue'
+import QuestionAnswer from './faq/QuestionAnswer.vue'
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import OurService from './service/OurService.vue'
     <WhySiksaOnline/>
     <OurService/>
     <Testimonials />
+    <QuestionAnswer/>
     <FinalCTA /> 
   </div>
 </template>
