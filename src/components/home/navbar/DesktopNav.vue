@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import logo from '@/assets/logo.png'
+import logo from '@/assets/footer.png'
 import { ChevronRightIcon } from '@heroicons/vue/16/solid';
 const navigationItems = [
   { name: "ទំព័រដើម", href: "/" },
@@ -14,8 +14,7 @@ const navigationItems = [
         <nav className="container grid grid-cols-2 md:grid-cols-3 items-center h-full">
         
         <div class="flex items-center gap-2">
-            <img :src="logo" alt="Logo" class="w-12 h-12" />
-            <span class="font-medium text-xl text-[#181f3c] hidden sm:block">សិក្សាអនឡាញ</span>
+            <img :src="logo" alt="Logo" class="w-[180px] h-auto block" />
         </div>
 
         <div class="hidden md:flex justify-center">
@@ -23,7 +22,7 @@ const navigationItems = [
             <li v-for="(item, index) in navigationItems" :key="index">
                 <a
                 :href="item.href"
-                class="no-underline text-[#181f3c] font-medium"
+                class="no-underline text-violet-950 font-medium"
                 >
                 {{ item.name }}
                 <span

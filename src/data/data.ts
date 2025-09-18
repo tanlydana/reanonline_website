@@ -14,6 +14,13 @@ import khmerImg from '@/assets/khmer.jpg';
 import chemisImg from '@/assets/chemis.jpg';
 import historyImg from '@/assets/history.jpg';
 import englishImg from '@/assets/english.png';
+import facebook from '@/assets/facebook.png'
+import instagram from '@/assets/instagram.png';
+import linkedin from '@/assets/linkedin.png';
+import whatsapp from '@/assets/whatsapp.png';
+import twitter from '@/assets/twitter.png';
+import github from '@/assets/github.png';
+
 
 export interface Subject {
   name: string;
@@ -52,9 +59,8 @@ export interface FAQ {
 }
 
 export interface SocialMedia {
-  name: string;
   url: string;
-  icon: string;
+  img: string;
 }
 
 export interface Contact {
@@ -209,11 +215,15 @@ export const faqs: FAQ[] = [
   },
 ];
 
-export const socialMedia: SocialMedia[] = [
-  { name: "Facebook", url: "https://facebook.com", icon: "FacebookIcon" },
-  { name: "Instagram", url: "https://instagram.com", icon: "InstagramIcon" },
-  { name: "TikTok", url: "https://tiktok.com", icon: "TikTokIcon" },
+export const socialMedia = [
+  { url: "https://facebook.com", img: facebook },
+  { url: "https://instagram.com", img: instagram },
+  { url: "https://linkedin.com", img: linkedin },
+  { url: "https://whatsapp.com", img: whatsapp },
+  { url: "https://twitter.com", img: twitter },
+  { url: "https://github.com", img: github },
 ];
+
 
 export const contact: Contact = {
   phone: "+85512345678",
