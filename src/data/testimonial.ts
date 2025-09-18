@@ -1,7 +1,6 @@
- // adjust path if needed
-import avatar1 from '@/assets/avatar1.jpg';
-import avatar2 from '@/assets/avatar2.png';
-import avatar3 from '@/assets/avatar3.jpg';
+import avatar1 from "@/assets/avatar1.jpg";
+import avatar2 from "@/assets/avatar2.png";
+import avatar3 from "@/assets/avatar3.jpg";
 
 export interface Testimonial {
   name: string;
@@ -12,21 +11,31 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Sophea",
-    position: "Student",
-    feedback: "This course helped me understand every subject more clearly and boosted my confidence for the exam.",
+    name: "ធីតា",
+    position: "សិស្ស",
+    feedback:
+      "មេរៀនច្បាស់លាស់ កាលវិភាគអាចបត់បែនបាន និងគ្រូគាំទ្ររហូត ជួយឲ្យខ្ញុំសិក្សាបានងាយស្រួលជាងមុន។",
+    avatar: avatar3,
+  },
+  {
+    name: "សុភាព",
+    position: "សិស្ស",
+    feedback:
+      "វគ្គសិក្សានេះបានជួយឲ្យខ្ញុំយល់ច្បាស់ពីមុខវិជ្ជាទាំងអស់ និងមានទំនុកចិត្តកាន់តែច្រើនក្នុងការធ្វើប្រឡង។",
     avatar: avatar1,
   },
   {
-    name: "Virak",
-    position: "Student",
-    feedback: "The practice exams felt just like the real thing. Highly recommended for anyone preparing for BAC II.",
+    name: "វិរៈ",
+    position: "សិស្ស",
+    feedback:
+      "ការប្រឡងសាកសមទាំងនេះមានអារម្មណ៍ដូចជាប្រឡងពិតៗ ហើយជួយឲ្យខ្ញុំរៀបចំបានល្អសម្រាប់ការប្រឡងបាក់ឌុប។",
     avatar: avatar2,
   },
   {
-    name: "Pisey",
-    position: "Student",
-    feedback: "Clear lessons, flexible schedule, and supportive teachers. This platform made studying much easier.",
+    name: "ពិសី",
+    position: "សិស្ស",
+    feedback:
+      "មេរៀនច្បាស់លាស់ កាលវិភាគអាចបត់បែនបាន និងគ្រូគាំទ្ររហូត ជួយឲ្យខ្ញុំសិក្សាបានងាយស្រួលជាងមុន។",
     avatar: avatar3,
   },
 ];

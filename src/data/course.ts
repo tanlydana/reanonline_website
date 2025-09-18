@@ -1,10 +1,9 @@
-// Import local images
-import mathImg from '@/assets/math.jpg';
-import physicImg from '@/assets/physic.jpg';
-import khmerImg from '@/assets/khmer.jpg';
-import chemisImg from '@/assets/chemis.jpg';
-import historyImg from '@/assets/history.jpg';
-import englishImg from '@/assets/english.png';
+import mathImg from "@/assets/math.jpg";
+import physicImg from "@/assets/physic.jpg";
+import khmerImg from "@/assets/khmer.jpg";
+import chemisImg from "@/assets/chemis.jpg";
+import historyImg from "@/assets/history.jpg";
+import englishImg from "@/assets/english.png";
 
 export interface Course {
   image: string;

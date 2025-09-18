@@ -1,8 +1,9 @@
 <script setup lang="ts">
-// Imports here (optional)
+import DesktopNav from './DesktopNavbar.vue';
+import MobileNav from './MobileNav.vue';
 </script>
 
 <template>
-  <div>
-  </div>
+  <DesktopNav />
+  <MobileNav />
 </template>
