@@ -30,7 +30,7 @@ const isOpen = (index: number) => {
     </div>
 
     <div class="container flex flex-col items-center justify-center text-center mb-8">
-      <h2 class="header-text text-[#0A0F24] mb-4">ស្វែងយល់បន្ថែមអំពី សិក្សាអនឡាញ!</h2>
+      <h2 class="header-text bg-primary mb-4 leading-snug">ស្វែងយល់បន្ថែមអំពី សិក្សាអនឡាញ!</h2>
       <p class="sub-text">បើអ្នកមានចម្ងល់អំពីកម្មវិធីអភិវឌ្ឍន៍ជំនាញឌីជីថល អ្នកអាចស្វែងយល់តាមរយៈសំណួរ-ចម្លើយខាងក្រោមនេះ។
         ករណីអ្នកមិនទាន់ច្បាស់ អ្នកអាចទំនាក់ទំនងមកក្រុមការងារ ក.អ.ជ.ឌ. តាមរយៈទំព័រទំនាក់ទំនងរបស់យើងខ្ញុំ!</p>
     </div>
@@ -48,7 +48,7 @@ const isOpen = (index: number) => {
            
             <button @click="toggleFAQ(index)"
               class="w-full py-4 text-left flex items-start justify-between border-0 bg-transparent">
-              <h5 class="text-lg md:text-xl font-kantumruy  leading-relaxed">
+              <h5 class="text-base font-kantumruy leading-relaxed">
                 {{ faq.question }}
               </h5>
 

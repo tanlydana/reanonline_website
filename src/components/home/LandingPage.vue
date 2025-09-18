@@ -17,7 +17,6 @@ import QuestionAnswer from './faq/QuestionAnswer.vue'
     <OurService/>
     <Testimonials />
     <QuestionAnswer/>
-    <FinalCTA /> 
   </div>
 </template>
 

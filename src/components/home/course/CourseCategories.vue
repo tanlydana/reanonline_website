@@ -6,7 +6,7 @@ import { categories } from '../../../data/data';
   <section class="bg-gray-50 py-20">
     <div class="container flex flex-col items-center justify-center text-center">
       <!-- title -->
-      <h2 class="header-text text-[#0A0F24] mb-4">Choose Your Stream</h2>
+      <h2 class="header-text bg-secondary mb-4">Choose Your Stream</h2>
       <p class="sub-text">ការរៀបចំដ៏ទូលំទូលាយសម្រាប់ទាំងផ្នែកវិទ្យាសាស្ត្រ និងសង្គមវិទ្យា</p>
 
       <!-- Categories Grid -->

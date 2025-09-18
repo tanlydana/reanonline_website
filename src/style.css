@@ -15,8 +15,8 @@ body {
 }
 
 :root {
-  --color-primary: #BB2233;
-  --color-secondary: #FA8603;
+  --color-primary: #191996;
+  --color-secondary: #8F00FF;
   --color-tertiary: #0A0F24;
 }
 
@@ -24,21 +24,21 @@ body {
     @apply mx-auto px-4 sm:px-6 lg:px-8;
   }
   .btn-primary {
-  @apply text-white text-sm py-3 px-6 rounded-full transition border-none;
-  background-color: var(--color-primary);
+  @apply text-white text-sm py-3 px-6 rounded-full transition border-none bg-violet-800;
   font-family: "Kantumruy Pro", sans-serif;
 }
 
 .btn-secondary {
-  @apply text-white text-sm py-3 px-6 rounded-full transition border-none;
-  background-color: var(--color-secondary);
+  @apply text-white text-sm py-3 px-6 rounded-full transition border-none bg-violet-500;
+   background-color: var(--color-primary);
+ 
   font-family: "Kantumruy Pro", sans-serif;
 }
 .font-kantumruy {
   font-family: "Kantumruy Pro", sans-serif;
 }
 .badge{
-  @apply inline-flex items-center px-4 py-2 bg-[#BB2233]/60 text-white text-sm font-medium rounded-full;
+  @apply inline-flex items-center px-4 py-2 bg-sky-500 text-white text-sm font-medium rounded-full;
 }
 .header-text{
   @apply text-4xl md:text-5xl font-bold; 
@@ -50,3 +50,14 @@ body {
   @apply rounded-xl shadow-sm  transition-all duration-300 hover:-translate-y-1 p-8 border border-amber-50;  
 }
 
+/* src/assets/styles.css or main.css */
+.bg-primary {
+  background: linear-gradient(90deg, #0ea5e9, #4c1d95); /* sky-500 → violet-800 */
+  -webkit-background-clip: text; /* for text gradient */
+  -webkit-text-fill-color: transparent; /* show gradient on text */
+}
+.bg-secondary {
+  background: linear-gradient(90deg,#8b5cf6, #075985); /* violet-500 → sky-800 */
+  -webkit-background-clip: text; /* for text gradient */
+  -webkit-text-fill-color: transparent; /* show gradient on text */
+}
