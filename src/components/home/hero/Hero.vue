@@ -3,7 +3,7 @@ import video from '@/assets/herovideo.mp4'
 import { ArrowDownTrayIcon } from '@heroicons/vue/16/solid';
 </script>
 <template>
-  <section class="relative h-[75vh] w-full flex items-center justify-center bg-black">
+  <section class="relative h-[75dvh] md:h-[75vh] w-full flex items-center justify-center bg-black">
 
     <video autoplay muted loop playsinline class="absolute w-full h-full object-cover brightness-40">
       <source :src="video" type="video/mp4" />
