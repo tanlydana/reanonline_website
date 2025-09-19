@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { ChevronDownIcon } from '@heroicons/vue/24/outline';
+import { ChevronDownIcon,EnvelopeIcon } from '@heroicons/vue/24/outline';
 import { faqs } from '../../../data/faq';
 
 const openItems = ref<number[]>([]);
@@ -74,5 +74,20 @@ const isOpen = (index: number) => {
         <img src="../../../assets/faqs.png" alt="faq" class="w-full max-w-md h-auto object-contain" />
       </div>
     </div>
+
+    <div class="container max-w-6xl flex flex-col my-20">
+      <div class="w-full text-center bg-[#191996] rounded-2xl p-10 md:p-16 
+           border border-gray-200 flex flex-col items-center gap-6">
+        <p class="text-lg md:text-2xl leading-relaxed max-w-3xl text-white">
+          បើអ្នកនៅតែមិនទាន់ច្បាស់ ឬមានចម្ងល់ផ្សេងទៀត
+          អ្នកអាចទាក់ទងមកក្រុមការងាររបស់យើងតាមរយៈប៊ូតុង
+          <span class="font-semibold">"ទំនាក់ទំនង"</span> ខាងក្រោម។
+          យើងមានសេចក្តីរីករាយក្នុងការឆ្លើយតបនឹងសំណួរទាំងអស់របស់អ្នក។
+        </p>
+        <button
+          class="text-[#191996] font-kantumruy font-medium text-sm py-3 px-6 rounded-full transition border-none bg-white flex gap-2"><EnvelopeIcon class="w-5 h-5 "/>ទំនាក់ទំនង</button>
+      </div>
+    </div>
+
   </section>
 </template>
