@@ -1,5 +1,30 @@
-# ReanOnline
+# ReanOnline Project
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+![Project Logo](./src/assets/reanonlines.png)
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+This is a simple project built with **Vite**, **Vue 3**, and **TypeScript**.  
+It's part of my practice to learn modern frontend development.
+
+---
+
+## Tech Stack
+
+- **Vite** – Fast frontend build tool  
+- **Vue 3** – JavaScript framework for UI  
+- **TypeScript** – Adds type safety to JS  
+- **Tailwind CSS** – Styling and responsive design   
+
+---
+
+## Features
+
+- Simple responsive UI  
+- Interactive components using Vue  
+- TypeScript type safety  
+- Modern styling with Tailwind CSS  
+
+---
+
+## License
+
+This project is for learning purposes only.
