@@ -38,7 +38,7 @@ import { ChevronRightIcon } from '@heroicons/vue/16/solid';
 
             <div class="container max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-auto h-auto mt-12">
                 <div v-for="us in whyChooseUs" :key="us.title"
-                    class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center">
+                    class="bg-white p-8 rounded-2xl border border-gray-200 text-center">
 
                     <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
                         :class="us.bgColor">

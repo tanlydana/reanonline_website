@@ -15,7 +15,7 @@ import { CheckCircleIcon } from '@heroicons/vue/16/solid';
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl container mt-16">
         <div v-for="plan in plans" :key="plan.name"
-          class="border border-gray-200 bg-white rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          class="border border-gray-200 bg-white rounded-lg"
           :class="plan.popular ? 'lg:scale-105 lg:shadow-2xl ' : ''">
           <div class="p-8">
             <!-- Plan Header -->

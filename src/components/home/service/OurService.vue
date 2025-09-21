@@ -12,7 +12,7 @@ import { courses } from '../../../data/course';
     </div>
     <div class="container max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div v-for="course in courses" :key="course.name"
-        class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+        class="bg-white rounded-lg overflow-hidden border border-gray-200 transition">
 
         <img :src="course.image" :alt="course.name" class="w-full h-48 object-cover border-b-1 border-gray-200" />
 
