@@ -18,7 +18,7 @@ import { ArrowDownTrayIcon } from '@heroicons/vue/16/solid';
         រៀនជាមួយវីដេអូ បង្រៀនច្បាស់ និង ការប្រឡងសាកល្បងជួយឲ្យអ្នកត្រៀមខ្លួនសម្រាប់បាក់ឌុប
       </p>
       <div class="flex justify-center gap-4 flex-wrap">
-        <button class="btn-secondary flex items-center gap-2">
+        <button class="cursor-pointer btn-secondary flex items-center gap-2">
           <ArrowDownTrayIcon class="w-5 h-5" /> ទាញយកសៀវភៅរៀន
         </button>
       </div>

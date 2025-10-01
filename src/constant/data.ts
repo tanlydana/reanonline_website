@@ -4,35 +4,13 @@ import {
   CurrencyDollarIcon,
   VideoCameraIcon,
 } from "@heroicons/vue/24/solid";
-import type { Component } from "vue";
 import facebook from "@/assets/fbs.png";
 import instagram from "@/assets/ig.png";
 import linkedin from "@/assets/link.png";
 import whatsapp from "@/assets/what.png";
 import twitter from "@/assets/twit.png";
 import github from "@/assets/git.png";
-
-export interface WhyChooseCard {
-  icon: Component;
-  title: string;
-  description: string;
-  bgColor: string;
-}
-
-export interface SocialMedia {
-  img: string;
-}
-
-export interface Contact {
-  phone: string;
-  email: string;
-  address: string;
-}
-
-export interface NavLink {
-  name: string;
-  path: string;
-}
+import type { WhyChooseCard, Contact, NavLink } from "./types";
 
 export const whyChooseUs: WhyChooseCard[] = [
   {

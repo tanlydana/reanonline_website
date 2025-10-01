@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import logo from '@/assets/footer.png'
-import { navLinks, contact, socialMedia } from '../../../data/data';
+import { navLinks, contact, socialMedia } from '../../../constant/data';
 </script>
 
 <template>

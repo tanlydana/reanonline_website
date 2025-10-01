@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { ChevronDownIcon,EnvelopeIcon } from '@heroicons/vue/24/outline';
-import { faqs } from '../../../data/faq';
+import { faqs } from '../../../constant/faq';
 
 const openItems = ref<number[]>([]);
 

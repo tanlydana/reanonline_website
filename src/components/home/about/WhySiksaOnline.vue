@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { whyChooseUs } from '../../../data/data';
+import { whyChooseUs } from '../../../constant/data';
 import { ChevronRightIcon } from '@heroicons/vue/16/solid';
 </script>
 <template>

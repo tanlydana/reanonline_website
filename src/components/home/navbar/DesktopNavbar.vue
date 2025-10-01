@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import logo from '@/assets/footer.png'
 import { Bars3Icon, XMarkIcon, ChevronRightIcon } from '@heroicons/vue/24/solid'
-import { navLinks } from '../../../data/data'
+import { navLinks } from '../../../constant/data'
 
 const isOpen = ref(false)
 const toggleMenu = () => (isOpen.value = !isOpen.value)
@@ -12,10 +12,10 @@ const toggleMenu = () => (isOpen.value = !isOpen.value)
     <header class="w-full sticky top-0 z-50 bg-white shadow-md h-20">
         <nav class="container mx-auto flex items-center justify-between h-full px-4">
 
-            <div class="flex items-center gap-2"> <img :src="logo" alt="Logo" class="w-[180px] h-auto block" /> </div>
+            <div class="flex items-center gap-2 cursor-pointer"> <img :src="logo" alt="Logo" class="w-[180px] h-auto block" /> </div>
 
             <div class="hidden lg:flex justify-center">
-                <ul class="flex items-center space-x-8 list-none gap-8 ">
+                <ul class="cursor-pointer flex items-center space-x-8 list-none gap-8 ">
                     <li v-for="(item, index) in navLinks" :key="index"> <a
                             class="relative no-underline text-violet-950 font-medium group"> {{ item.name }} <span
                                 class="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-600 transition-all duration-200 group-hover:w-full"></span>
@@ -24,7 +24,7 @@ const toggleMenu = () => (isOpen.value = !isOpen.value)
             </div>
 
             <div class="flex items-center gap-4">
-                <button class="hidden lg:flex btn-primary items-center gap-2">
+                <button class="cursor-pointer hidden lg:flex btn-primary items-center gap-2">
                     ចុះឈ្មោះឥឡូវ
                     <ChevronRightIcon class="w-5 h-5" />
                 </button>

@@ -1,13 +1,7 @@
 import avatar1 from "@/assets/avatar1.jpg";
 import avatar2 from "@/assets/avatar2.png";
 import avatar3 from "@/assets/avatar3.jpg";
-
-export interface Testimonial {
-  name: string;
-  position: string;
-  feedback: string;
-  avatar: string;
-}
+import type { Testimonial } from "./types";
 
 export const testimonials: Testimonial[] = [
   {

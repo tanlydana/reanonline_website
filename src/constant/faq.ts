@@ -1,7 +1,4 @@
-export interface FAQ {
-  question: string;
-  answer: string;
-}
+import type { FAQ } from "./types";
 export const faqs: FAQ[] = [
   {
     question: "តើខ្ញុំអាចចូលសិក្សានៅពេលណា?",

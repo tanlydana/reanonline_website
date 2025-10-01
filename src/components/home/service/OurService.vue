@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { courses } from '../../../data/course';
+import { courses } from '../../../constant/course';
 </script>
 
 <template>

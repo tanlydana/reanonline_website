@@ -3,26 +3,8 @@ import {
   SparklesIcon,
   BuildingOfficeIcon,
 } from "@heroicons/vue/24/solid";
-import type { Component } from "vue";
 
-export interface Plan {
-  icon: Component;
-  name: string;
-  description: string;
-  price: string;
-  period: string;
-  popular: boolean;
-  classes: {
-    border: string;
-    popularBorder: string;
-    text: string;
-    button: string;
-    icon: string;
-    badge: string;
-    bg: string;
-  };
-  benefits: string[];
-}
+import type { Plan } from "./types";
 
 export const plans: Plan[] = [
   {

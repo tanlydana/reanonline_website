@@ -4,12 +4,7 @@ import khmerImg from "@/assets/khmer.jpg";
 import chemisImg from "@/assets/chemis.jpg";
 import historyImg from "@/assets/history.jpg";
 import englishImg from "@/assets/english.png";
-
-export interface Course {
-  image: string;
-  name: string;
-  rate: number;
-}
+import type { Course } from "./types";
 
 export const courses: Course[] = [
   {

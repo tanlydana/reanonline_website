@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { plans } from '../../../data/plan';
+import { plans } from '../../../constant/plan';
 import { CheckCircleIcon } from '@heroicons/vue/16/solid';
 </script>
 

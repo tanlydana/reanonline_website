@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { testimonials } from '../../../data/testimonial';
+import { testimonials } from '../../../constant/testimonial';
 </script>
 
 <template>
